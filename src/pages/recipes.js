@@ -1,7 +1,7 @@
 import React from "react"
-
+import Layout from "../components/layout"
 const Recipes = () => {
-  return <div>recipes page</div>
+  return <Layout>recipes page</Layout>
 }
 
 export default Recipes
