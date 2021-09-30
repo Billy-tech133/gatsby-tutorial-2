@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import RecipesList from "../components/RecipesList"
 const contact = ({ data }) => {
   const recipes = data.allContentfulRecipe.nodes
@@ -24,7 +24,11 @@ const contact = ({ data }) => {
             </p>
           </article>
           <article>
-            <form className="contact-form">
+            <form
+              action="https://formspree.io/f/xleavgky"
+              method="POST"
+              className="contact-form"
+            >
               <div className="form-row">
                 <label htmlFor="name">your name</label>
                 <input type="text" name="name" id="name" />

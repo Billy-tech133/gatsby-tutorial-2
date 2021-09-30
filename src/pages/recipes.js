@@ -5,7 +5,7 @@ const Recipes = () => {
   return (
     <Layout>
       recipes page
-      <AllRecipes />
+      {/* <AllRecipes /> */}
     </Layout>
   )
 }

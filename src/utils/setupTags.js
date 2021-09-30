@@ -1,5 +1,6 @@
 const setupTags = recipes => {
   const allTags = {}
+
   recipes.forEach(recipe => {
     recipe.content.tags.forEach(tag => {
       if (allTags[tag]) {
@@ -14,8 +15,7 @@ const setupTags = recipes => {
     const [secondTag] = b
     return firstTag.localeCompare(secondTag)
   })
-  console.log(newTags)
+
   return newTags
 }
-
 export default setupTags
